@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Aluminium Aceh | Kusen Pintu Jendela Kaca Tempered Kanopi</title>
+<meta name="google-site-verification" content="8Jv2I9aXRz-He0GuhVGiebMZInn2esjfPQ9hJi3Rt3A" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.7}
+.container{max-width:1150px;margin:auto;padding:0 20px}
+section{padding:80px 20px}
+h2{text-align:center;font-size:2.3rem;color:#0f172a;margin-bottom:50px;font-weight:700}
+h3{color:#1e3a8a;margin-bottom:12px;font-size:1.4rem}
+img{max-width:100%;display:block}
+
+/* MENU NAVIGASI */
+nav{position:sticky;top:0;background:#0f172a;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.3)}
+nav ul{list-style:none;display:flex;justify-content:center;gap:30px;padding:18px 20px;flex-wrap:wrap}
+nav a{color:#e2e8f0;text-decoration:none;font-weight:600;transition:0.3s;font-size:0.95rem}
+nav a:hover{color:#60a5fa}
+
+/* HEADER */
+header{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#94a3b8 100%);color:white;padding:100px 20px;text-align:center}
+header h1{font-size:3.2rem;font-weight:700;margin-bottom:15px;animation:fadeInDown 0.8s}
+header p{font-size:1.25rem;opacity:0.95;max-width:700px;margin:auto;animation:fadeInUp 0.8s 0.3s both}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* TOMBOL WA */
+.btn-wa{display:inline-block;background:#25D366;color:white;padding:18px 45px;border-radius:50px;text-decoration:none;font-weight:600;font-size:1.1rem;margin-top:35px;box-shadow:0 8px 25px rgba(37,211,102,0.4);transition:0.3s;animation:fadeInUp 0.8s 0.6s both}
+.btn-wa:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 12px 35px rgba(37,211,102,0.6)}
+
+/* GRID & CARD */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:white;padding:35px 25px;border-radius:18px;box-shadow:0 4px 20px rgba(0,0,0,0.06);text-align:center;border-top:4px solid #cbd5e1;transition:0.4s}
+.card:hover{transform:translateY(-10px);box-shadow:0 15px 45px rgba(30,58,138,0.18);border-top:4px solid #1e3a8a}
+.card-icon{font-size:3.5rem;margin-bottom:15px}
+.card img{width:100%;height:190px;object-fit:cover;border-radius:10px;margin-bottom:18px}
+
+/* HARGA */
+.harga-wrap{background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%)}
+.price-card{background:white;padding:45px 30px;border-radius:22px;text-align:center;border:2px solid #cbd5e1;position:relative;overflow:hidden;transition:0.3s}
+.price-card:hover{border-color:#1e3a8a}
+.price-card.popular{border:2px solid #1e3a8a;transform:scale(1.05);box-shadow:0 10px 40px rgba(30,58,138,0.2)}
+.badge{position:absolute;top:18px;right:-40px;background:#1e3a8a;color:white;padding:6px 45px;transform:rotate(45deg);font-size:0.85rem;font-weight:600}
+.price{font-size:3rem;color:#1e3a8a;font-weight:700;margin:18px 0}
+.price span{font-size:1.1rem;color:#64748b;font-weight:400}
+
+/* PROSES */
+.proses{background:#0f172a;color:white}
+.proses h2{color:white}
+.step{position:relative}
+.step-number{background:#25D366;color:white;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;margin:0 auto 15px}
+
+/* FAQ */
+.faq-item{background:white;margin-bottom:15px;border-radius:12px;padding:20px;border-left:4px solid #cbd5e1;transition:0.3s}
+.faq-item:hover{border-left:4px solid #1e3a8a}
+.faq-item h4{color:#1e3a8a;margin-bottom:8px}
+
+/* GALERI */
+.galeri{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.galeri img{width:100%;height:260px;object-fit:cover;border-radius:14px;transition:0.4s;border:3px solid #e2e8f0}
+.galeri img:hover{transform:scale(1.06);box-shadow:0 12px 35px rgba(0,0,0,0.25);border-color:#1e3a8a}
+
+/* WA STICKY */
+.wa-sticky{display:none;position:fixed;bottom:22px;right:22px;z-index:999}
+.wa-sticky a{background:#25D366;color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.2rem;text-decoration:none;box-shadow:0 8px 25px rgba(37,211,102,0.5);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+
+/* FOOTER */
+footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:50px 20px}
+footer b{color:white;font-size:1.2rem}
+footer p{margin:8px 0}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav ul{gap:12px;padding:12px}
+  nav a{font-size:0.8rem}
+  header{padding:80px 20px}
+  header h1{font-size:2.2rem}
+  h2{font-size:1.7rem;margin-bottom:35px}
+  section{padding:60px 20px}
+  .price-card.popular{transform:scale(1)}
+  .wa-sticky{display:flex}
+  .btn-wa{padding:16px 35px;font-size:1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- MENU NAVIGASI -->
+<nav>
+  <ul>
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#keunggulan">Keunggulan</a></li>
+    <li><a href="#harga">Harga</a></li>
+    <li><a href="#galeri">Galeri</a></li>
+    <li><a href="#kaca">Kaca Tempered</a></li>
+    <li><a href="#pintu">Pintu</a></li>
+    <li><a href="#jendela">Jendela</a></li>
+    <li><a href="#proses">Proses</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<header id="beranda">
+  <div class="container">
+    <h1>Media Aluminium Aceh</h1>
+    <p>Spesialis Fabrikasi Kusen, Pintu, Jendela & Kaca Tempered Premium | Anti Rayap 20 Tahun | Garansi 5 Tahun</p>
+    <a href="https://wa.me/628126959210?text=Halo%20Bang%20Dhe,%20mau%20survey%20gratis" class="btn-wa">📲 Chat WA Survey & RAB Gratis</a>
+  </div>
+</header>
+
+<!-- KEUNGGULAN -->
+<section id="keunggulan">
+  <div class="container">
+    <h2>Kenapa 200+ Rumah di Aceh Pilih Kami?</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Anti Rayap Seumur Hidup</h3>
+        <p>100% Aluminium murni. Lupakan biaya ganti kusen tiap 3-5 tahun karena rayap, jamur, dan lapuk.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💎</div>
+        <h3>Kaca Tempered Asli</h3>
+        <p>Kaca 8mm-12mm tempered. 5x lebih kuat dari kaca biasa. Pecah jadi butiran tumpul, aman untuk keluarga.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Pengerjaan 7-10 Hari</h3>
+        <p>Tim pasang 4 orang bersertifikat. Rapih, bersih, nggak ngerusak tembok. Selesai sesuai jadwal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HARGA -->
+<section id="harga" class="harga-wrap">
+  <div class="container">
+    <h2>Harga Paket Pasaran</h2>
+    <div class="grid-3">
+      <div class="price-card">
+        <h3>Paket Jendela</h3>
+        <p class="price">850rb<span>/m2</span></p>
+        <p>Aluminium 1.2mm + Kaca 5mm<br>+ Engsel + Pasang + Sealant</p>
+      </div>
+      <div class="price-card popular">
+        <div class="badge">Terlaris</div>
+        <h3>Paket Pintu Utama</h3>
+        <p class="price">1.2jt<span>/m2</span></p>
+        <p>Aluminium 1.2mm + Kaca 5mm<br>+ Kunci + Handel + Pasang</p>
+      </div>
+      <div class="price-card">
+        <h3>Survey & RAB</h3>
+        <p class="price">GRATIS<span></span></p>
+        <p>Tim datang ukur ke lokasi<br>se-Aceh Besar, Banda Aceh & Sabang</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:45px;font-weight:600;color:#1e3a8a;font-size:1.1rem">💰 DP 30%-50% aja langsung kerja. setelah beres + kamu cek kualitas dulu, baru pelunasan</p>
+  </div>
+</section>
+
+<!-- GALERI -->
+<section id="galeri">
+  <div class="container">
+    <h2>Portofolio Project Real Kami</h2>
+    <div class="galeri">
+      <img src="https://i.imgur.com/Tq8ceTA.jpeg/400x250/1e3a8a/ffffff?text=Projek" alt="Before Projek BPJS Lhoksemaweh">
+      <img src="https://i.imgur.com/THHISX6.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="After Projek BPJS Lhoksemaweh">
+      <img src="https://i.imgur.com/UDEQ2nu.jpeg/THHISX6.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Projek BPJS Lhoksemaweh">
+      <img src="https://i.imgur.com/NVvlfz4.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="BPJS Merbo Meulaboh">
+      <img src="https://i.imgur.com/q3O3Y3R.jpeg/400x250/1e3a8a/ffffff?text=Projek" alt="Pemasangan Kaca Kampus Ubudiyah">
+      <img src="https://i.imgur.com/EQdh5CK.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Kaca Kampus Ubudiyah">
+      <img src="https://i.imgur.com/l7iF1zZ.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Kaca Rumah Minimalis Lamgugop">
+      <img src="https://i.imgur.com/r3CfbNp.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan ACP Dan Kaca One Way Vision">
+      <img src="https://i.imgur.com/0Ap9pF3.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan ACP Dan Kaca One Way Vision">
+      <img src="https://i.imgur.com/sK3MfgU.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Gerbang Pertamina Krueng Raya">
+      <img src="https://i.imgur.com/IzVNWNT.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Kaca One Way Vision">
+      <img src="https://i.imgur.com/FqOkuA8.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Kaca Masjid Blang Bintang">
+      <img src="https://i.imgur.com/CTHy79E.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Kaca Bandara Sultan Iskandar Muda">
+      <img src="https://i.imgur.com/Pq7SEov.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pintu Sleding Swing">
+      <img src="https://i.imgur.com/3fi6o2F.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pintu Slidingh Swing">
+      <img src="https://i.imgur.com/R7W25lt.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Box Shower Kacsa Tempered">
+      <img src="https://i.imgur.com/bGR6qfr.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Pintu Lhoknga">
+      <img src="https://i.imgur.com/OaUgVZx.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Pintu Lhoknga">
+      <img src="https://i.imgur.com/H097Sa5.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Kaca Jendela Dan Pintu PLTU Nagan Raya">
+      <img src="https://i.imgur.com/8WQUkZx.jpeg/400x250/cbd5e1/1e3a8a?text=Projek" alt="Pemasangan Finger Print Krueng Raya">
+      
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION BARU: KACA TEMPERED & KANOPI - DI ATAS JENDELA ========== -->
+<section id="kaca" style="background:#f8fafc">
+  <div class="container">
+    <h2>Kaca Tempered Premium 8-12mm</h2>
+    <p style="text-align:center;max-width:700px;margin:-30px auto 40px;color:#64748b;font-size:1.1rem">Untuk rumah & ruko modern. Tahan benturan, tahan panas, tampilan mewah minimalis</p>
+    
+    <div class="grid-4">
+      
+      <div class="card">
+        <img src="https://i.imgur.com/x21yM03.jpeg/400x300/1e3a8a/ffffff?text=Pintu+Kaca+Tempered+10mm" alt="Pintu Kaca Tempered">
+        <h3>Pintu Kaca Tempered 12mm</h3>
+        <p>Pintu swing tanpa kusen aluminium. Handle stainless, hidrolik Bawah. Kaca bening/grey/bronze. Kesan mewah ruko & rumah modern.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.8jt/m</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/De05gFP.jpeg/400x300/cbd5e1/1e3a8a?text=Kanopi+Kaca+Tempered" alt="Kanopi Kaca">
+        <h3>Kanopi Kaca Tempered 10-12mm</h3>
+        <p>Kanopi teras, carport, balkon. Rangka besi hollow + kaca tempered. Tahan panas + UV 99%. Nggak gampang retak.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 950rb/m</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/ia97RIi.jpeg/400x300/1e3a8a/ffffff?text=Kaca+Tempered+Partisi" alt="Partisi Kaca">
+        <h3>Partisi Kaca Tempered</h3>
+        <p>Sekat ruangan kantor, ruko, kamar mandi. Kaca 8-10mm + klem stainless. Ruang jadi terang & kelihatan luas.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai Rp 600.000/m</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/tOM3vgu.jpeg/400x300/cbd5e1/1e3a8a?text=Kaca+Sandblast" alt="Kaca Sandblast">
+        <h3>Kaca Sandblast/Asam</h3>
+        <p>Kaca buram untuk privasi kamar mandi & kantor. Bisa motif custom. Tetap masuk cahaya tapi nggak tembus pandang.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai Rp 135.000/m</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/VApqmnL.jpeg/400x300/1e3a8a/ffffff?text=Kaca+Railing+Tangga" alt="Railing Kaca">
+        <h3>Railing Kaca Tangga/Balkon</h3>
+        <p>Pengaman tangga & balkon kaca 10-12mm + jepit stainless. Modern, nggak nutup pemandangan. Kuat diinjak.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.7jt/m</p>
+      </div>
+
+    </div>
+    
+    <p style="text-align:center;margin-top:40px;font-style:italic;color:#64748b">*Harga kaca tempered tergantung ketebalan, warna, motif & aksesoris. Survey gratis buat hitung detail</p>
+  </div>
+</section>
+
+<!-- PINTU -->
+<section id="pintu" style="background:#f1f5f9">
+  <div class="container">
+    <h2>Model Pintu Aluminium Premium</h2>
+    <div class="grid-3">
+      <div class="card">
+        <img src="http://i.imgur.com/Tjq5D5V.jpeg/400x300/1e3a8a/ffffff?text=Pintu+Swing" alt="Pintu Swing">
+        <h3>Pintu Swing 1 Daun</h3>
+        <p>Buka dorong/tarik standar. Engsel 3D kuat. Paling awet. Standar pintu utama rumah.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.2jt/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/ifzW4vx.jpeg/400x300/cbd5e1/1e3a8a?text=Pintu+Double" alt="Pintu Double">
+        <h3>Pintu Double 2 Daun</h3>
+        <p>Pintu lebar 2 daun kesan mewah. Bisa buka 1 daun harian, 2 daun pas ada tamu.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.3jt/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/3bklAJP.jpeg/400x300/1e3a8a/ffffff?text=Pintu+Sliding" alt="Pintu Sliding">
+        <h3>Pintu Sliding Geser</h3>
+        <p>Buka geser tanpa ayun. Hemat space 100%. Cocok balkon, dapur, kamar mandi.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.25jt/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/N0oz3uQ.jpeg/400x300/cbd5e1/1e3a8a?text=Pintu+Lipat" alt="Pintu Lipat">
+        <h3>Pintu Lipat Folding</h3>
+        <p>Buka lipat kayak akordeon. Buka full 100% tanpa tiang tengah. Buat ruang terbuka.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.5jt/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/MLgeQye.jpeg/400x300/1e3a8a/ffffff?text=Pintu+Panel+ACP" alt="Pintu Panel">
+        <h3>Pintu Panel ACP Solid</h3>
+        <p>Kombinasi aluminium + panel ACP warna. Solid privasi tinggi, kedap suara.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 1.4jt/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/1ATrxBG.jpeg/400x300/cbd5e1/1e3a8a?text=Pintu+KM" alt="Pintu Kamar Mandi">
+        <h3>Pintu Kamar Mandi</h3>
+        <p>Anti air 100%, anti jamur. Bisa model swing atau sliding hemat tempat.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 650rb/m</p>
+      </div>
+    </div>
+</section>
+
+<!-- JENDELA -->
+<section id="jendela">
+  <div class="container">
+    <h2>Pilih Model Jendela Aluminium</h2>
+    <div class="grid-3">
+      <div class="card">
+        <img src="https://i.imgur.com/IRj1o4x.jpeg/400x300/1e3a8a/ffffff?text=Jendela+Casement" alt="Jendela Casement">
+        <h3>Jendela Casement</h3>
+        <p>Buka ke luar 90°. Paling kedap air & angin. Karet EPDM rapat. Cocok kamar & ruang tamu.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 900rb/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/4nZq2Yq.jpeg/400x300/cbd5e1/1e3a8a?text=Jendela+Sliding" alt="Jendela Sliding">
+        <h3>Jendela Sliding Geser</h3>
+        <p>Buka geser kanan-kiri hemat tempat. Roda bearing awet. Cocok rumah minimalis & apartemen.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 900rb/m</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/LNbpKDD.jpeg/400x300/cbd5e1/1e3a8a?text=Jendela+Fix" alt="Jendela Fix">
+        <h3>Jendela Fix Kaca Mati</h3>
+        <p>Model kaca mati full. Maksimal cahaya masuk. Biasanya dikombinasi sama casement.</p>
+        <p style="margin-top:12px;color:#1e3a8a;font-weight:600">Mulai 600rb/m</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p style="text-align:center;margin-top:50px">
+      <a href="https://wa.me/628126959210?text=Halo%20Bang%20Dhe,%20mau%20konsultasi%20model%20pintu%20jendela" class="btn-wa">📲 Konsultasi Model Gratis</a>
+    </p>
+  </div>
+    </div>
+    <p style="text-align:center;margin-top:40px;font-style:italic;color:#64748b">*Harga kusen dihitung per meter lari. Termasuk jasa pasang + foam + sealant</p>
+  </div>
+
+</section>
+
+<!-- PROSES KERJA -->
+<section id="proses" class="proses">
+  <div class="container">
+    <h2>Proses Kerja Kami 4 Langkah Aja</h2>
+    <div class="grid-4">
+      <div class="step card" style="background:#1e293b;border-top:4px solid #25D366">
+        <div class="step-number">1</div>
+        <h3 style="color:white">Survey Gratis</h3>
+        <p>Tim datang ukur lokasi, kasih saran model terbaik, hitung RAB detail. Nggak cocok = nggak maksa.</p>
+      </div>
+      <div class="step card" style="background:#1e293b;border-top:4px solid #25D366">
+        <div class="step-number">2</div>
+        <h3 style="color:white">DP 30%-50% Kerja</h3>
+        <p>Deal harga → DP 30%-50% → langsung produksi di workshop. Transparan, ada jadwal pengerjaan jelas.</p>
+      </div>
+      <div class="step card" style="background:#1e293b;border-top:4px solid #25D366">
+        <div class="step-number">3</div>
+        <h3 style="color:white">Pemasangan 7-10 Hari, Tergantung Perkerjaan</h3>
+        <p>Tim 4 orang datang pasang. Rapih Dan bersih. Rumah tetap nyaman ditinggali.</p>
+      </div>
+      <div class="step card" style="background:#1e293b;border-top:4px solid #25D366">
+        <div class="step-number">4</div>
+        <h3 style="color:white">Cek & Pelunasan</h3>
+        <p>Kamu cek dulu hasil + fungsi. Oke? Baru pelunasan. Garansi 5 tahun langsung aktif.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" style="background:#f1f5f9">
+  <div class="container">
+    <h2>Pertanyaan Yang Sering Ditanya</h2>
+    <div style="max-width:800px;margin:auto">
+      
+      <div class="faq-item">
+        <h4>Q: Kaca tempered 8mm vs 12mm bedanya apa?</h4>
+        <p>A: 8mm untuk partisi & pintu biasa. 12mm untuk pintu besar & kanopi. Makin tebal makin kuat tahan benturan. Kami kasih saran sesuai kebutuhan & budget.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Q: Kanopi kaca panas nggak ke teras?</h4>
+        <p>A: Nggak Bang. Kami pakai kaca tempered + coating UV. Panas 70% dipantul balik. Bisa tambah kaca grey/bronze biar adem.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Q: Aluminium 1.2mm itu tebal nggak Bang?</h4>
+        <p>A: Tebal Bang. Standar gedung. Kalau yang 0.8mm itu gampang penyok. Kami berani garansi 5 tahun karena bahan 1.2mm + engsel.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p><b>Media Aluminium Aceh</b></p>
+    <p>Workshop: Lampaseh Kota, Banda Aceh | Melayani: Banda Aceh, Sabang, Aceh Besar</p>
+    <p>📞 WA: 0812-6959-210 | 📷 IG: @media_aluminium | 🕒 Jam: 08.00 - 17.00 WIB</p>
+    <p style="margin-top:25px;font-size:0.9rem;opacity:0.8">© 2026 Media Aluminium & Kaca Aceh. Kusen Anti Rayap, Kaca Tempered Aman.</p>
+  </div>
+</footer>
+
+<!-- WA STICKY -->
+<div class="wa-sticky">
+  <a href="https://wa.me/628126959210?text=Halo%20Bang%20Dhe" aria-label="Chat WhatsApp">💬</a>
+</div>
+
+</body>
+</html>
